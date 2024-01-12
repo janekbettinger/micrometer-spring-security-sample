@@ -3,6 +3,8 @@
 This is a minimal, reproducible sample that exemplifies a potential bug regarding Micrometer Observation and Spring
 Security Web.
 
+The issue has been reported at [spring-projects/spring-security#14445](https://github.com/spring-projects/spring-security/issues/14445).
+
 ```text
 java.lang.IllegalStateException: Span wasn't started - an observation must be started (not only created)
         at io.micrometer.tracing.handler.TracingObservationHandler.getRequiredSpan(TracingObservationHandler.java:209) ~[micrometer-tracing-1.2.1.jar:1.2.1]
